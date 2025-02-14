@@ -1,7 +1,8 @@
-import React from 'react'
+
+
 
 export default function Home() {
   return (
-    <div>Nhà có chó không, có thì nuôi đi</div>
+    <div>Nhà có chádaó không, có thì nuôi đi</div>
   )
 }
