@@ -1,0 +1,98 @@
+.footer {
+    width: 100%;
+    background: white;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .topSection {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: serif;
+  }
+  
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: gray;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+  }
+  
+  .socialIcons a {
+    color: black;
+    transition: color 0.3s ease;
+  }
+  
+  .socialIcons a:hover {
+    color: gray;
+  }
+  
+  .line {
+    border-top: 1px solid black;
+    margin: 15px 20px;
+  }
+  
+  .bottomSection {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+  .bottomNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .bottomNav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+  }
+  
+  .bottomNav a:hover {
+    color: gray;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .topSection, .bottomSection {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  

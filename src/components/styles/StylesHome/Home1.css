@@ -4,7 +4,8 @@
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 10%;
-    margin-top: 8%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 11%;
 }
 
 /* Hero Section */
@@ -87,10 +88,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Container chính */
-  .home-container2 {
+
+}
+
+/* Container chính */
+.home-container2 {
     width: 98.9vw;
     height: 100vh;
     display: flex;
@@ -99,74 +101,77 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-  }
-  
-  /* Section2 */
-  .section2-container {
+}
+
+/* Section2 */
+.section2-container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Dịch nội dung lệch sang trái */
-    background-color: black; /* Toàn bộ nền đen */
+    justify-content: space-between;
+    /* Dịch nội dung lệch sang trái */
+    background-color: black;
+    /* Toàn bộ nền đen */
     color: white;
     width: 100%;
     height: 100%;
     padding: 0 5%;
-  }
-  
-  /* Hình ảnh bên trái */
-  .section2-image {
+}
+
+/* Hình ảnh bên trái */
+.section2-image {
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .section2-image img {
+}
+
+.section2-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    opacity: 0.8;margin-right: 20%;
-  }
-  
-  /* Nội dung bên phải, dịch sang trái */
-  .section2-content {
+    opacity: 0.8;
+    margin-right: 20%;
+}
+
+/* Nội dung bên phải, dịch sang trái */
+.section2-content {
     width: 48%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Căn trái thay vì giữa */
+    align-items: flex-start;
+    /* Căn trái thay vì giữa */
     padding: 0 40px;
     text-align: left;
-  }
-  
-  .section2-content h1 {
+}
+
+.section2-content h1 {
     font-size: 48px;
     font-weight: bold;
     line-height: 1.2;
-  }
-  
-  .section2-content h1 span {
+}
+
+.section2-content h1 span {
     font-weight: 900;
-  }
-  
-  .section2-content p {
+}
+
+.section2-content p {
     margin-top: 16px;
     font-size: 18px;
     color: #d1d1d1;
-  }
-  
-  /* Nút bấm */
-  .section2-buttons {
+}
+
+/* Nút bấm */
+.section2-buttons {
     margin-top: 24px;
     display: flex;
     gap: 16px;
-  }
-  
-  /* Nút "Khám phá" */
+}
+
+/* Nút "Khám phá" */
 .btn-primary {
     padding: 12px 24px;
     background-color: white;
@@ -200,54 +205,4 @@
     background-color: white;
     color: black;
     border: 2px solid black;
-}
-
-/* HeroSection.css SS3 */
-.hero-container3 {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    margin-top: 8%;
-}
-
-.hero-subtitle {
-    font-size: 14px;
-    font-weight: bold;
-    color: #444;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.hero-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 15px;
-}
-
-.hero-description {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-}
-
-
-  
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-content,
-    .hero-image {
-        max-width: 100%;
-    }
-
-    .hero-image {
-        text-align: center;
-    }
 }
