@@ -1,0 +1,69 @@
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  background: white; /* Đảm bảo header có nền */
+  border-bottom: 2px solid black; /* Gạch chân màu vàng */
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Logo bên trái, nav ở giữa */
+}
+
+/* Logo */
+.logo {
+  margin-left: 10px;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 30px;
+  flex: 1; /* Giúp nav mở rộng toàn bộ không gian */
+  justify-content: center; /* Căn giữa nav */
+  align-items: center;
+}
+
+/* Link menu */
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: medium;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #f1c40f; /* Màu vàng khi hover */
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .nav {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+  }
+}
