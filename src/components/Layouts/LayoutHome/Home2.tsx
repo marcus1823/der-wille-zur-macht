@@ -106,7 +106,7 @@ const Home2: React.FC = () => {
                         <button className="btn-secondary">Đọc thêm</button>
                     </div>
                 </div>
-                <img src="src/assets/hinh7.webp" alt="Nietzsche" className="" />
+                <img src="src/assets/hinh7.webp" alt="Nietzsche" className="imageout" />
                 <div className="hero-container3">
                     <h1 className="hero-title">Bài viết nổi bật</h1>
                     <p className="hero-description">

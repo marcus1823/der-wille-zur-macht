@@ -368,3 +368,8 @@ a:hover {
     width: auto; /* Giữ nguyên tỷ lệ */
     object-fit: cover; /* Giúp ảnh không bị méo */
 }
+
+.imageout{
+  width: 100%;
+}
+
