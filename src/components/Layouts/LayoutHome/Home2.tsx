@@ -101,12 +101,10 @@ const Home2: React.FC = () => {
                     <p className="hero-description">
                         Hãy tìm hiểu sâu hơn về triết lý 'Ý chí quyền lực' của Nietzsche ngay hôm nay.
                     </p>
-                    <div className="section2-buttons">
-                        <button className="btn-primary">Khám phá</button>
-                        <button className="btn-secondary">Đọc thêm</button>
-                    </div>
                 </div>
                 <img src="src/assets/hinh7.webp" alt="Nietzsche" className="imageout" />
+
+
                 <div className="hero-container3">
                     <h1 className="hero-title">Bài viết nổi bật</h1>
                     <p className="hero-description">
@@ -114,32 +112,7 @@ const Home2: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="container5">
-                    <div className="articles">
-                        <div className="article">
-                            <img src="src/assets/hinh8.jpg" alt="Nietzsche 1" className="image8" />
-                            <div className="content">
-                                <span className="category">Ý nghĩa</span>
-                                <span className="time">5 phút đọc</span>
-                                <h2>Sự mạnh mẽ của Ý chí</h2>
-                                <p>Khám phá cách Nietzsche định nghĩa sức mạnh và khát vọng.</p>
-                                <a href="#">Đọc thêm →</a>
-                            </div>
-                        </div>
-                        <div className="article">
-                            <img src="src/assets/hinh3.jpg" alt="Nietzsche 2" className="image8" />
-                            <div className="content">
-                                <span className="category">Triết lý</span>
-                                <span className="time">7 phút đọc</span>
-                                <h2>Vượt qua giới hạn bản thân</h2>
-                                <p>Tìm hiểu cách vượt qua thử thách trong cuộc sống.</p>
-                                <a href="#">Đọc thêm →</a>
-                            </div>
-                        </div>
-                    </div>
-                    <button className="view-all">Xem tất cả</button>
-                </div>
-
+                
             </div>
 
 

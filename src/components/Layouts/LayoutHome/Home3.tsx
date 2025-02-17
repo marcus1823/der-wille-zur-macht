@@ -5,9 +5,36 @@ const Home3: React.FC = () => {
 
     return (
         <div>
-            
+
             {/* ss5 */}
             <div className="faq-container">
+
+                <div className="container5">
+                    <div className="articles">
+                        <div className="article">
+                            <img src="src/assets/hinh8.jpg" alt="Nietzsche 1" className="image8" />
+                            <div className="content">
+                                <span className="category">Ý nghĩa</span>
+                                <span className="time">5 phút đọc</span>
+                                <h2>Sự mạnh mẽ của Ý chí</h2>
+                                <p>Khám phá cách Nietzsche định nghĩa sức mạnh và khát vọng.</p>
+                                <a href="#">Đọc thêm →</a>
+                            </div>
+                        </div>
+                        <div className="article">
+                            <img src="src/assets/hinh3.jpg" alt="Nietzsche 2" className="image8" />
+                            <div className="content">
+                                <span className="category">Triết lý</span>
+                                <span className="time">7 phút đọc</span>
+                                <h2>Vượt qua giới hạn bản thân</h2>
+                                <p>Tìm hiểu cách vượt qua thử thách trong cuộc sống.</p>
+                                <a href="#">Đọc thêm →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button className="view-all">Xem tất cả</button>
+                </div>
+
                 <h2 className="faq-title">Câu hỏi</h2>
                 <p className="faq-description">
                     Dưới đây là những câu hỏi thường gặp về triết lý ý chí quyền lực.

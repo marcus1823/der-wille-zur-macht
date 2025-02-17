@@ -70,3 +70,93 @@
 .faq-button:hover {
     background-color: #0056b3;
 }
+
+.container5 {
+    text-align: center;
+    max-width: 900px;
+    margin-left: 60px;
+}
+
+.articles {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.article {
+    width: 45%;
+    background: white;
+    text-align: left;
+}
+
+.article img {
+    max-height: 200px;
+    width: 400px;
+    display: block;
+}
+
+.content {
+    padding: 15px;
+}
+
+.category {
+    background: #d4d4d4;
+    padding: 3px 8px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.time {
+    font-size: 14px;
+    color: #666;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 14px;
+    color: #444;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #f1c40f;
+}
+
+.view-all {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.view-all:hover {
+    background: black;
+    color: white;
+}
+
+.image8 {
+    max-height: 200px; /* Điều chỉnh theo mong muốn */
+    width: auto; /* Giữ nguyên tỷ lệ */
+    object-fit: cover; /* Giúp ảnh không bị méo */
+    margin-top: -30px;
+}
+
+.imageout{
+  width: 100%;
+  margin-top: 30px;
+}
+

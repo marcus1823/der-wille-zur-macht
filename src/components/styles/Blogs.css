@@ -99,7 +99,7 @@
 
 .work-item img {
     max-height: 200px; /* Điều chỉnh theo mong muốn */
-    width: auto; /* Giữ nguyên tỷ lệ */
+    width: 300px; /* Giữ nguyên tỷ lệ */
     object-fit: cover; /* Giúp ảnh không bị méo */
 }
 
