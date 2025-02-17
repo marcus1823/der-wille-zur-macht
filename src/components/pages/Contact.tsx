@@ -34,19 +34,15 @@ const Contact = () => {
 
       </div>
 
-      <div style={{ maxWidth: "400px", margin: "auto", textAlign: "center" }}>
-        <h4>Liên hệ</h4>
-        <h2 style={{ fontWeight: "bold" }}>Chúng tôi</h2>
+      <div style={{ maxWidth: "400px", margin: "auto", textAlign: "center", marginBottom: 20 }}>
+        <h4 style={{marginBottom: 10}}>Liên hệ chúng tôi</h4>
         <p>Chúng tôi khuyến khích bạn chia sẻ ý kiến.</p>
-        <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-          <label>Họ</label>
-          <input type="text" name="name" value={formData.name} onChange={handleChange} required style={{ padding: "8px", width: "100%" }} />
+        <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "15px", marginTop: 19 }}>
+          <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Họ" required style={{ padding: "8px", width: "100%" }} />
 
-          <label>Email</label>
-          <input type="email" name="email" value={formData.email} onChange={handleChange} required style={{ padding: "8px", width: "100%" }} />
+          <input type="email" name="email" value={formData.email} placeholder="Email" onChange={handleChange} required style={{ padding: "8px", width: "100%" }} />
 
-          <label>Nội dung</label>
-          <textarea name="message" value={formData.message} onChange={handleChange} required style={{ padding: "8px", width: "100%", height: "100px" }}></textarea>
+          <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Nội dung" required style={{ padding: "8px", width: "100%", height: "100px" }}></textarea>
 
           <div style={{ display: "flex", alignItems: "center" }}>
             <input type="checkbox" name="termsAccepted" checked={formData.termsAccepted} onChange={handleChange} />
@@ -56,7 +52,7 @@ const Contact = () => {
           <button type="submit" style={{ padding: "10px", backgroundColor: "black", color: "white", border: "none", cursor: "pointer" }}>Gửi</button>
         </form>
       </div>
-      <div className="blog-image">
+      <div className="blog-image" style={{width: "80%",marginLeft: "11%"}}>
         <img src="src/assets/hinh14.jpg" alt="God is dead - Nietzsche" />
       </div>
       <Footer />
