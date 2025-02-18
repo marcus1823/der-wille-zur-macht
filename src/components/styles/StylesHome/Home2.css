@@ -1,221 +1,85 @@
-/* HeroSection.css SS3 */
-.hero-container3 {
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px 20px;
-    margin-top: 5%;
-    font-family: 'Poppins', sans-serif;
-
+.home-page-container1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("src/assets/image 2.png"); /* Đặt hình ảnh làm nền */
+  background-size: cover;
+  background-position: center;
 }
 
-
-.hero-title {
-    font-size: 40px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 40px;
+.home-page-content1 {
+  position: absolute;
+  /* top: 50%; */
+  right:  5%;
+  width: 50%;
+  /*
+  transform: translate(50%, -50%);
+  background: rgba(255, 255, 255, 0.8); 
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
 }
 
-.hero-description {
-    font-size: 17px;
-    color: #555;
-    line-height: 1.6;
+/* Điều chỉnh hero-section để không bị tràn */
+.hero-section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
-/* SS4 */
-  .card {
-    background-color: white;
-    padding: 1.5rem;
-    border: 1px solid #000;
-  }
-  
-  .card-title {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 0.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .card-subtitle {
-    font-size: 0.875rem;
-    font-weight: 600;
-    
-  }
-  
-  .card-text {
-    color: #374151;
-    margin-top: 0.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .button-group {
-    margin-top: 1rem;
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .button-dark {
-    padding: 0.5rem 1rem;
-    background-color: #1f2937;
-    color: white;
-    border-radius: 0.5rem;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .button-outline {
-    padding: 0.5rem 1rem;
-    border: 1px solid #1f2937;
-    border-radius: 0.5rem;
-    background: transparent;
-    cursor: pointer;
-  }
+.hero-section-content1 h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+}
 
-  .image1{
-    width: 100%;
-    height: 100%;
-    margin-top: 40px;
-  }
-  
-  .card {
-    background-color: white;
-    padding: 1.5rem;
-    border: 1px solid #000;
-  }
-  
-  .card-title {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 0.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .card-subtitle {
-    font-size: 0.875rem;
-    font-weight: 600;
-    
-  }
-  
-  .card-text {
-    color: #374151;
-    margin-top: 0.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .button-group {
-    margin-top: 1rem;
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .button-dark {
-    padding: 0.5rem 1rem;
-    background-color: #1f2937;
-    color: white;
-    border-radius: 0.5rem;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .button-outline {
-    padding: 0.5rem 1rem;
-    border: 1px solid #1f2937;
-    border-radius: 0.5rem;
-    background: transparent;
-    cursor: pointer;
-  }
-  
-  .image-container {
-    display: flex;
-    border: 1px solid #000;
-  }
-  
-  .image-container .image {
-    width: 40%;
-    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
-  }
-  
-  .overlay {
-    width: 50%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Căn giữa nội dung theo chiều dọc */
-  }
-  
-  .overlay-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .overlay-text {
-    font-size: 1rem;
-    margin-bottom: 15px;
-  }
-  
-  .overlay-button {
-    background-color: #ff9800;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .overlay-button:hover {
-    background-color: #e68900;
-  }  
-  
-  .left-column {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Chia thành 2 cột nhỏ */
-    gap: 1rem;
-  }
-  
-  .right-column {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    border: 1px solid #000;
-  }
-  
-  .card, .dark-card {
-    background-color: white;
-    padding: 1.5rem;
-    border: 1px solid #000;
-  }
-  
-  .dark-card img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
-    border-radius: 0.75rem;
-  }
-  
-  .dark-card-content {
-    position: relative;
-  }
-  
-  .dark-card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  
-  .dark-card-text {
-    font-size: 0.875rem;
-    margin-top: 0.5rem;
-  }
-  
-  .dark-card-button {
-    margin-top: 0.5rem;
-    color: white;
-    font-weight: 600;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
+.hero-section-content1 p {
+  font-size: 18px;
+  color: #b9b5b5;
+  margin-top: 10px;
+}
+
+.hero-section-buttons1 {
+  margin-top: 30px;
+  display: flex;
+}
+/* Buttons */
+.hero-section-buttons1 {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-section-buttons1 button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.hero-section-buttons1 .explore-btn1 {
+  background: #ffffff;
+  color: #000000;
+}
+
+.hero-section-buttons1 .explore-btn1:hover {
+  background: #666666;
+}
+
+.hero-section-buttons1 .learn-btn1 {
+  background: transparent;
+  border: 2px solid #666666;
+  color: #ffffff;
+}
+
+.hero-section-buttons1 .learn-btn1:hover {
+  background: #666666;
+  color: white;
+}

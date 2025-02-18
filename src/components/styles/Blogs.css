@@ -1,150 +1,222 @@
-.blog-container {
-    margin-top: 10%;
-}
-
-.breadcrumb {
+/* Reset đơn giản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Font mặc định */
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+  }
+  
+  /* ========== BLOG CONTAINER CHÍNH ========== */
+  .blog-container {
+    max-width: 1200px;
+    margin: 80px auto; /* canh giữa và tạo khoảng trống trên */
+    padding: 0 20px;
+  }
+  
+  /* Breadcrumb */
+  .breadcrumb {
     font-size: 14px;
     color: #666;
     margin-bottom: 10px;
-}
-
-.blog-title {
-    font-size: 28px;
+  }
+  
+  .blog-title {
+    font-size: 32px;
     font-weight: bold;
     color: #000;
-    margin-bottom: 15px;
-}
-
-.blog-meta {
+    margin-bottom: 20px;
+  }
+  
+  /* Thông tin meta */
+  .blog-meta {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     font-size: 14px;
     color: #666;
     margin-bottom: 20px;
-}
-
-.author-avatar {
-    width: 40px;
-    height: 40px;
+  }
+  
+  .author-avatar {
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-}
-
-.author-info {
+    object-fit: cover;
+  }
+  
+  .author-info {
     display: flex;
     flex-direction: column;
-}
-
-.author-name {
-    font-weight: bold;
+  }
+  
+  .author-name {
+    font-weight: 600;
     color: #000;
-}
-
-.blog-date {
-    font-size: 12px;
+    font-size: 15px;
+  }
+  
+  .blog-date {
+    font-size: 13px;
     color: #666;
-}
-
-.social-icons a {
+  }
+  
+  /* Social icons (tùy biến theo icon font bạn dùng) */
+  .social-icons a {
     margin-left: 10px;
     color: #000;
     text-decoration: none;
-    font-size: 16px;
-}
-
-.blog-image img {
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #555;
+  }
+  
+  /* Hero Image */
+  .blog-image img {
     width: 100%;
     height: 500px;
+    object-fit: cover;
     margin-top: 10px;
-    object-fit: cover; /* Giúp ảnh không bị méo */
-
-}
-
-.featured-works {
+    border-radius: 6px;
+  }
+  
+  /* ========== PHẦN FEATURED-WORKS ========== */
+  .featured-works {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
-    font-family: Arial, sans-serif;
-}
-
-.intro h2 {
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .intro-category {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .featured-works h2 {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.intro h2 span {
-    color: black;
-}
-
-.intro p {
+  }
+  
+  .featured-works p {
     font-size: 16px;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-.works-container {
+    color: #555;
+  }
+  
+  /* Container chứa các bài viết */
+  .works-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-}
-
-.work-item {
+    margin-top: 30px;
+  }
+  
+  /* Mỗi item */
+  .work-item {
     flex: 1;
-    text-align: left;
     background: #fff;
-}
-
-.work-item img {
-    max-height: 200px; /* Điều chỉnh theo mong muốn */
-    width: 300px; /* Giữ nguyên tỷ lệ */
-    object-fit: cover; /* Giúp ảnh không bị méo */
-}
-
-.work-item h3 {
+    border-radius: 6px;
+    overflow: hidden; /* ẩn phần thừa khi border-radius */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Hover item */
+  .work-item:hover {
+    transform: translateY(-3px);
+  }
+  
+  .work-item img {
+    width: 100%;
+    height: 200px; /* chiều cao đồng nhất */
+    object-fit: cover;
+    display: block;
+  }
+  
+  .work-item .content {
+    padding: 15px;
+  }
+  
+  /* Dòng meta: Category + Time */
+  .meta-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .category {
+    background: #eaeaea;
+    padding: 3px 8px;
+    font-size: 13px;
+    border-radius: 3px;
+  }
+  
+  .time {
+    font-size: 13px;
+    color: #999;
+  }
+  
+  .work-item h2 {
     font-size: 18px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.work-item p {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #000;
+  }
+  
+  .work-item p {
     font-size: 14px;
     color: #555;
-}
-
-.buttons {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-}
-
-.explore-btn, .more-btn {
-    padding: 10px 15px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  .work-item a {
+    color: #000;
     font-size: 14px;
-    border: 1px solid black;
-    background: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.more-btn:hover {
-    background: black;
-    color: white;
-}
-
-.content {
-    padding: 15px;
-}
-
-.category {
-    background: #d4d4d4;
-    padding: 3px 8px;
-    font-size: 14px;
-    border-radius: 3px;
-    margin-right: 10px;
-}
-
-.time {
-    font-size: 14px;
-    color: #666;
-}
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+  }
+  
+  .work-item a:hover {
+    border-bottom: 1px solid #000;
+  }
+  
+  /* ========== PHẦN KHÁM PHÁ TRIẾT LÝ ========== */
+  .container5 {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .hero-container3 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .hero-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .hero-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  

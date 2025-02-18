@@ -1,0 +1,303 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+  }
+  
+  /* Tiện ích chung */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* ========== HERO SECTION ========== */
+  .blog-detail-hero {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .blog-detail-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .blog-detail-meta {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .blog-detail-meta .dot {
+    color: #ccc;
+  }
+  
+  .author {
+    font-weight: 600;
+    color: #000;
+  }
+  
+  .social-share {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .social-share span {
+    color: #666;
+  }
+  
+  .social-share a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  /* ========== HERO IMAGE + QUOTE ========== */
+  .hero-image-section {
+    margin-top: 20px;
+  }
+  
+  .hero-image {
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  .hero-quote {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px 20px;
+    font-size: 18px;
+    font-style: italic;
+    border-radius: 4px;
+    max-width: 300px;
+    color: #000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .hero-quote span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+    color: #555;
+  }
+  
+  /* ========== BLOG CONTENT ========== */
+  .blog-content-section {
+    margin: 40px 0;
+  }
+  
+  .blog-content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* cột chính và cột aside */
+    gap: 40px;
+  }
+  
+  /* Cột chính */
+  .blog-content-main h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: #000;
+  }
+  
+  .blog-content-main p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .content-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  /* Cột bên phải (aside) */
+  .blog-content-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .aside-quote-box {
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  
+  .aside-quote-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .aside-quote-box p {
+    font-style: italic;
+    line-height: 1.5;
+  }
+  
+  .aside-image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  /* ========== REVIEW SECTION ========== */
+  .review-section {
+    background-color: #fafafa;
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .review-container {
+    margin-bottom: 30px;
+  }
+  
+  .review-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .stars {
+    color: #f39c12; /* màu vàng cho sao */
+    font-size: 18px;
+  }
+  
+  .rating-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .comment-container {
+    margin-bottom: 10px;
+  }
+  
+  .comment-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .comment-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .comment-actions button {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .comment-actions button:hover {
+    background: #f0f0f0;
+  }
+  
+  /* ========== RELATED POSTS ========== */
+  .related-posts-section {
+    padding: 40px 0;
+  }
+  
+  .related-posts-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: left;
+  }
+  
+  .related-posts-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* để responsive */
+  }
+  
+  .related-post-item {
+    flex: 1;
+    min-width: 250px; /* đảm bảo không quá nhỏ */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.2s;
+  }
+  
+  .related-post-item:hover {
+    transform: translateY(-3px);
+  }
+  
+  .related-post-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .related-post-item h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #000;
+  }
+  
+  .related-post-item p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  
+  .related-post-item a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .related-post-item a:hover {
+    border-bottom: 1px solid #000;
+  }
+  

@@ -1,47 +1,56 @@
-/* Home Container SS1 */
-.home-container1 {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 10%;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 11%;
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Home Page Container */
+.home-page-container {
+    padding: 20px;
+}
+
+.home-page-content {
+    /* margin: 0 auto; */
+    padding: 0 50px;
+    /* margin-top: 5%; */
 }
 
 /* Hero Section */
-.hero {
+.hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 10px;
     margin-top: 80px;
 }
 
-/* Nội dung bên trái */
-.hero-content {
+/* Left Content */
+.hero-section-content {
     flex: 1;
-    max-width: 70%;
-    margin-right: 20%;
+    max-width: 80%;
+    margin-right: 10%;
 }
 
-.hero-content h1 {
+.hero-section-content h1 {
     font-size: 40px;
     font-weight: bold;
     color: #333;
 }
 
-.hero-content p {
+.hero-section-content p {
     font-size: 18px;
     color: #555;
     margin-top: 10px;
 }
 
-/* Nút bấm */
-.hero-buttons {
-    margin-top: 20px;
+/* Buttons */
+.hero-section-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
 }
 
-.hero-buttons button {
+.hero-section-buttons button {
     padding: 12px 20px;
     font-size: 16px;
     border: none;
@@ -51,45 +60,40 @@
     margin-right: 10px;
 }
 
-.hero-buttons .explore-btn {
-    background: #007bff;
-    color: white;
+.hero-section-buttons .explore-btn {
+    background: #000000;
+    color: #ffffff;
 }
 
-.hero-buttons .explore-btn:hover {
-    background: #0056b3;
+.hero-section-buttons .explore-btn:hover {
+    background: #666666;
 }
 
-.hero-buttons .learn-btn {
+.hero-section-buttons .learn-btn {
     background: transparent;
-    border: 2px solid #555;
-    color: #555;
+    border: 2px solid #666666;
+    color: #000000;
 }
 
-.hero-buttons .learn-btn:hover {
-    background: #555;
+.hero-section-buttons .learn-btn:hover {
+    background: #666666;
     color: white;
 }
 
-/* Hình ảnh bên phải */
-.hero-image {
+/* Right Image */
+.hero-section-image {
     flex: 1;
-    text-align: right;
+    /* text-align: right; */
+    max-width: 50%;
 }
 
-.hero-image img {
-    max-width: 100%;
+.hero-section-image img {
     height: auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Đảm bảo không có margin/padding thừa SS2*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 
-}
 
 /* Container chính */
 .home-container2 {
@@ -101,108 +105,4 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Section2 */
-.section2-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* Dịch nội dung lệch sang trái */
-    background-color: black;
-    /* Toàn bộ nền đen */
-    color: white;
-    width: 100%;
-    height: 100%;
-    padding: 0 5%;
-}
-
-/* Hình ảnh bên trái */
-.section2-image {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section2-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    opacity: 0.8;
-    margin-right: 20%;
-}
-
-/* Nội dung bên phải, dịch sang trái */
-.section2-content {
-    width: 48%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    /* Căn trái thay vì giữa */
-    padding: 0 40px;
-    text-align: left;
-}
-
-.section2-content h1 {
-    font-size: 48px;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-.section2-content h1 span {
-    font-weight: 900;
-}
-
-.section2-content p {
-    margin-top: 16px;
-    font-size: 18px;
-    color: #d1d1d1;
-}
-
-/* Nút bấm */
-.section2-buttons {
-    margin-top: 24px;
-    display: flex;
-    gap: 16px;
-}
-
-/* Nút "Khám phá" */
-.btn-primary {
-    padding: 12px 24px;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
-    border: 2px solid white;
-}
-
-.btn-primary:hover {
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-}
-
-/* Nút "Đọc thêm" */
-.btn-secondary {
-    padding: 12px 24px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.3s;
-    border: 2px solid white;
-}
-
-.btn-secondary:hover {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
 }
