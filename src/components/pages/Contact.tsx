@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "../styles/Contact.css";
 import Header from "../Layouts/Header";
 import Footer from "../Layouts/Footer";
@@ -10,16 +10,17 @@ const Contact = () => {
     message: "",
     termsAccepted: false,
   });
-
-  const handleChange = (e) => {
+  
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleChange = (e: { target: { name: any; value: any; type: any; checked: any; }; }) => {
     const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
       [name]: type === "checkbox" ? checked : value,
     });
   };
-
-  const handleSubmit = async (e) => {
+ 
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     try {
       const response = await fetch('https://script.google.com/macros/s/AKfycbyti1D89jv9UqgYC-gqT1LvE7rHeOq-RRcsb7TK3wXDLl1QbuPUCqs13ZlbjpB-qptnGg/exec', {
@@ -51,7 +52,7 @@ const Contact = () => {
         <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "15px", marginTop: 19 }}>
           <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Họ" required style={{ padding: "8px", width: "100%" }} />
           <input type="email" name="email" value={formData.email} placeholder="Email" onChange={handleChange} required style={{ padding: "8px", width: "100%" }} />
-          <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Nội dung" required style={{ padding: "8px", width: "100%", height: "100px" }}></textarea>
+          <input name="message" value={formData.message} onChange={handleChange} placeholder="Nội dung" required style={{ padding: "8px", width: "100%", height: "100px" }}></input>
           <div style={{ display: "flex", alignItems: "center" }}>
             <input type="checkbox" name="termsAccepted" checked={formData.termsAccepted} onChange={handleChange} />
             <label style={{ marginLeft: "5px" }}>Tôi chấp nhận điều khoản</label>
