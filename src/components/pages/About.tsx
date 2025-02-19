@@ -21,7 +21,7 @@ const About: React.FC = () => {
             </div>
             <div className="hero-image">
               <img
-                src="src/assets/hinhHero.jpg"
+                src="src/assets/hinh3.jpg"
                 alt="Nietzsche"
               />
             </div>
@@ -137,7 +137,7 @@ const About: React.FC = () => {
             </div>
             <div className="influence-image">
               <img
-                src="src/assets/hinhInfluence.jpg"
+                src="src/assets/hinh9.jpg"
                 alt="Nietzsche painting"
               />
             </div>

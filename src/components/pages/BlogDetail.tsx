@@ -33,11 +33,7 @@ const BlogDetail: React.FC = () => {
       <section className="hero-image-section">
         <div className="container">
           <div className="hero-image">
-            <img src="src/assets/hinhDetailHero.jpg" alt="Nietzsche" />
-            <blockquote className="hero-quote">
-              "The pure soul is a pure lie"
-              <span>— Friedrich Nietzsche</span>
-            </blockquote>
+            <img src="src/assets/hinh16.jpg" alt="Nietzsche" />
           </div>
         </div>
       </section>
@@ -68,7 +64,7 @@ const BlogDetail: React.FC = () => {
             </p>
             <img
               className="content-image"
-              src="src/assets/hinhDetailContent.jpg"
+              src="src/assets/hinh15.jpg"
               alt="Triết lý của Nietzsche"
             />
             <p>
@@ -88,23 +84,24 @@ const BlogDetail: React.FC = () => {
             <div className="aside-quote-box">
               <h3>Khung trích dẫn nổi bật</h3>
               <p>
-                “Con người là một sợi dây căng giữa thú vật và Siêu nhân — một sợi dây trên
-                vực thẳm.”
+                “Con người là một sợi dây căng giữa thú vật và Siêu nhân — một sợi dây trên vực thẳm.”
               </p>
+              <h4>Trích dẫn</h4>
+              <p>“Sống là một cuộc chiến, và ý chí quyền lực chính là động lực.”</p>
+              <h4>Ý nghĩa</h4>
+              <p>Câu trích dẫn này thể hiện sức mạnh của ý chí con người.</p>
             </div>
             <div className="aside-image-box">
-              <img
-                src="src/assets/hinhDetailAside.jpg"
-                alt="Nietzsche portrait"
-              />
+              <img src="src/assets/hinh8.jpg" alt="Nietzsche portrait" />
             </div>
           </aside>
+
         </div>
       </section>
 
       {/* ========== RATING / COMMENTS ========== */}
       <section className="review-section">
-        <div className="container review-container">
+        <div className="container-review-container">
           <h2>Nhận xét từ độc giả</h2>
           <div className="rating">
             <span className="stars">★★★★★</span>
@@ -116,7 +113,7 @@ const BlogDetail: React.FC = () => {
           </p>
         </div>
 
-        <div className="container comment-container">
+        <div className="container-comment-container">
           <h3>Chia sẻ bài viết này</h3>
           <div className="comment-actions">
             <button>Thích</button>
@@ -128,12 +125,13 @@ const BlogDetail: React.FC = () => {
 
       {/* ========== BÀI VIẾT LIÊN QUAN ========== */}
       <section className="related-posts-section">
+      <h2 style={{display: "flex", justifyContent: 'center', alignItems: "center", textAlign: "center"}}>Bài viết liên quan</h2>
         <div className="container">
-          <h2>Bài viết liên quan</h2>
+          
           <div className="related-posts-grid">
             <div className="related-post-item">
               <img
-                src="src/assets/hinhRelated1.jpg"
+                src="src/assets/hinh8.jpg"
                 alt="Beyond Good and Evil"
               />
               <h3>Vượt lên giới hạn: Triết lý về tự do</h3>
@@ -144,7 +142,7 @@ const BlogDetail: React.FC = () => {
             </div>
             <div className="related-post-item">
               <img
-                src="src/assets/hinhRelated2.jpg"
+                src="src/assets/hinh4.jpg"
                 alt="Human, All Too Human"
               />
               <h3>Con người và bản năng: Góc nhìn mới</h3>
@@ -155,7 +153,7 @@ const BlogDetail: React.FC = () => {
             </div>
             <div className="related-post-item">
               <img
-                src="src/assets/hinhRelated3.jpg"
+                src="src/assets/hinh9.jpg"
                 alt="Genealogy of Morals"
               />
               <h3>Đạo đức và luân lý: Một góc nhìn phê phán</h3>
