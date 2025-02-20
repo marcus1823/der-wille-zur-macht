@@ -22,7 +22,7 @@ const Blogs: React.FC = () => {
         <div className="blog-meta">
           <img
             className="author-avatar"
-            src="src/assets/hinh1.jpg"
+            src="https://as1.ftcdn.net/v2/jpg/00/37/56/68/1000_F_37566856_7I5AWWFIAPuutbFAO4HruKo8WyeyVweT.jpg"
             alt="Friedrich Nietzsche"
           />
           <div className="author-info">
@@ -55,9 +55,9 @@ const Blogs: React.FC = () => {
       <section className="featured-works">
         <div className="intro">
           <p className="intro-category">Blog</p>
-          <h2>Short heading goes here</h2>
+          <h2>Bài viết liên quan</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Những bài viết khác về Ý chí quyền lực và triết lý hiện đại.
           </p>
         </div>
 
