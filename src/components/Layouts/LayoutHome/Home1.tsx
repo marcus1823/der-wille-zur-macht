@@ -19,7 +19,7 @@ const Home1: React.FC = () => {
                         </div>
                     </div>
                     <div className="hero-section-image">
-                        <img src="src/assets/hinh1.jpg" alt="Nietzsche" />
+                        <img src="https://as1.ftcdn.net/v2/jpg/00/37/56/68/1000_F_37566856_7I5AWWFIAPuutbFAO4HruKo8WyeyVweT.jpg" alt="Nietzsche" />
                     </div>
                 </section>
             </div>
